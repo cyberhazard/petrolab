@@ -26,6 +26,44 @@ html
   width: 12.4rem
   height: 3rem
   margin-bottom 4rem
+
+.button
+  border: none;
+  z-index: 1;
+  position: relative;
+  outline: none;
+  background-color transparent
+  margin: 1.2rem 0;
+  &_mini span
+    font-size: 2rem
+  & span
+    font-family: "Arian AMU";
+    font-size: 2.6rem;
+    background-color: #d41e44;
+    color: white;
+    padding: 1.6rem 2.5rem;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+    &:before
+      content: '';
+      position: absolute;
+      right: -1.2rem;
+      bottom: -1.2rem;
+      border: 2px solid #d41e44;
+      height: 50%;
+      width: 50%;
+      z-index: -1;
+      border-top: none;
+      border-left: none;
+      transition: .5s;
+    &:hover
+      background-color: #bf1b3d;
+      &:before
+        width: 100%;
+        height: 100%;
+        border: 2px solid #d41e44;
+
 @media (max-width: 1600px)
   html
     font-size: 9px
