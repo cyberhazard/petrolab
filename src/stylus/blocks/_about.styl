@@ -1,0 +1,55 @@
+.about
+  padding-top 7.4rem
+  &__heading
+    color: #2e2e2e;
+    font-family: "Arian AMU";
+    font-size: 5.4rem;
+    font-weight: 700;
+  &__zzz
+    height 3rem
+    margin 3rem 0 4.5rem 0
+  &__text
+    color: #2e2e2e;
+    font-family: "PT Sans";
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin-bottom 2rem
+    position relative
+    &_last
+      margin-bottom 6rem
+    &_bold
+      font-weight: 700
+    &_line
+      padding 1.2rem 0 1.2rem 2.4rem
+      &:before
+        content: ''
+        position absolute
+        top 0
+        left 0
+        height 100%
+        width 1rem
+        background-image: linear-gradient(to bottom, #6B5CAE, #C33548)
+
+@media (max-width: 1000)
+  .about
+    padding-top 5rem
+    &__heading
+      font-size: 3.6rem
+    &__zzz
+      margin 2rem 0 3.4rem 0
+    &__text
+      font-size: 2.2rem
+
+@media (max-width: 667)
+  .about
+    padding-top 3.6rem
+    &__heading
+      font-size: 3rem
+    &__zzz
+      height 2.6rem
+      margin 1.8rem 0 2rem 0
+    &__text
+      font-size: 1.6rem
+      margin-bottom 1.7rem
+      &_last
+        margin-bottom 2.7rem
