@@ -117,3 +117,81 @@
       background-color #C23548
       border-radius 50%
       margin-right 1rem
+
+@media (max-width: 1600px)
+  .competence
+    background white url('./../../images/houses.png') top center/auto 37rem no-repeat;
+
+@media (max-width: 1000px)
+  .competence
+    background white url('./../../images/houses.png') top center/auto 19.1rem no-repeat;
+    padding-top 19.1rem
+    &__heading
+      font-size: 3.6rem;
+    &__zzz
+      margin 1.6rem 0 2rem 0
+    &__blocks
+      flex-wrap: wrap
+      justify-content space-around
+      margin-bottom 4.2rem
+    &__map
+      width 43.4%
+      margin-right 5rem
+    &__col
+      width: calc(100% / 2 - 5rem)
+      &:first-child
+        width: 100%
+        display flex
+        align-items center
+  .c-instruments
+    padding-bottom 3.4rem
+    &__block
+      width: 50%
+
+@media (max-width: 667px)
+  .competence
+    background white url('./../../images/houses.png') top center/auto 7.7rem no-repeat;
+    padding-top 7.7rem
+    &__heading
+      font-size: 3rem;
+    &__zzz
+      height 2.6rem
+      margin 1.6rem 0 .6rem 0
+    &__blocks
+      flex-wrap: wrap
+      justify-content space-around
+      margin-bottom 1rem
+    &__map
+      width 100%
+      margin-right none
+    &__map-text
+      font-size: 1.6rem;
+    &__col
+      width: 100%
+      margin-bottom 3rem
+      &:first-child
+        width: 100%
+        display block
+
+  .gradient-block
+    padding 2.1rem 1.4rem 2.1rem
+    &:before
+      font-size: 7.2rem;
+      left -1rem
+    &__heading
+      font-size: 1.8rem;
+      margin-bottom 1.6rem
+    &__text
+      font-size: 1.6rem;
+
+  .c-instruments
+    padding-bottom 2.4rem
+    &__heading
+      font-size: 1.8rem;
+    &__block
+      width: 100%
+    &__item
+      font-size: 1.6rem;
+      &:before
+        height 0.6rem
+        width 0.6rem
