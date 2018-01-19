@@ -1,5 +1,36 @@
 .contacts-map
-  padding-top 5rem
-  background-color #FFFFFF
+  padding 5rem 0 12rem
+  background  #FFFFFF url('../images/contacts-bg.png') bottom center no-repeat
+  background-size contain
+  &__content
+    margin-bottom 4.8rem
   &__block
-    border 3px solid black
+    border 1.4rem solid black
+  &__map
+    width 100%
+    object-fit: cover
+  &__logo
+    display block
+    margin-bottom 2rem
+  &__inform
+    display flex
+    justify-content: space-between
+    align-items: center
+  &__item
+    color: #2e2e2e;
+    font-family: "PT Sans";
+    font-size: 24px;
+    font-weight: 400;
+    padding-left 3rem
+    position relative
+    &_tel
+      font-size: 30px;
+    &:before
+      content ""
+      left 0
+      top 1.6rem
+      width 2rem
+      height: 0.6rem
+      position absolute
+      background-color #d41e44
+
