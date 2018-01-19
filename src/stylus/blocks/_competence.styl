@@ -4,6 +4,7 @@
   &__content
     background-color #2E2E2E
     margin-top -0.1rem
+    overflow hidden
   &__heading
     color: #ffffff;
     font-family: "Arian AMU";
@@ -44,6 +45,7 @@
     display flex
     justify-content space-between
     align-content center
+    margin-bottom 9rem
   &__col
     width calc(100% / 3 - 1rem)
     flex 0 0 auto
@@ -85,3 +87,33 @@
     font-family: "PT Sans";
     font-size: 2.4rem;
     font-weight: 400;
+
+.c-instruments
+  padding-bottom 7.4rem
+  &__heading
+    color: #ffffff;
+    font-family: "Arian AMU";
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom 1rem
+  &__blocks
+    display flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__block
+    flex 0 0 auto
+    width: calc(100% / 3)
+  &__item
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 2.4rem;
+    font-weight: 400;
+    white-space: nowrap
+    &:before
+      content: ''
+      display inline-block
+      width 1rem
+      height 1rem
+      background-color #C23548
+      border-radius 50%
+      margin-right 1rem
