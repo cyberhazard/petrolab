@@ -1,0 +1,52 @@
+.competence
+  background white url('./../../images/houses.png') top center/100% 37rem no-repeat;
+  padding-top 37rem
+  &__content
+    background-color #2E2E2E
+    margin-top -0.1rem
+  &__heading
+    color: #ffffff;
+    font-family: "Arian AMU";
+    font-size: 5.4rem;
+    font-weight: 700;
+  &__zzz
+    height 3.1rem
+    margin 2.6rem 0 5.6rem 0
+  &__map
+    width 94%
+    margin-bottom 3.5rem
+  &__map-text
+    color: #ffffff;
+    font-family: "Arian AMU";
+    font-size: 1.8rem;
+    font-weight: 400;
+    position relative
+    padding-left 1.2rem
+    line-height 2.5rem
+    margin-bottom 1rem
+    &:last-child
+      margin-bottom none
+    &_blue, &_red
+      &:before
+        content: ''
+        position absolute
+        top 0
+        left 0
+        height 1.2rem
+        width 6.2rem
+        transform translateY(100%)
+        z-index -1
+    &_blue:before
+      background-color #5272D7
+    &_red:before
+      background-color #C0354C
+  &__blocks
+    display flex
+    justify-content space-between
+    align-content center
+  &__col
+    width calc(100% / 3 - 1rem)
+    flex 0 0 auto
+    //- border 1px solid white
+    z-index 1
+    position relative
