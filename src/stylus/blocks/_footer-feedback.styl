@@ -26,3 +26,31 @@
   &__button span
     display: block
     padding 2rem 10rem
+
+@media (max-width:1024px)
+  .footer-feedback
+    &__form
+      &_title
+        font-size 3.6rem
+      &__header
+        margin-bottom 3.4rem
+@media (max-width:667px)
+  .footer-feedback
+    margin-bottom 4rem
+    &__form
+      &_item
+        &_last
+          margin-bottom 2rem
+      &_title
+        text-align: center
+        font-size 1.8rem
+        margin-bottom 5rem
+      &_header
+        display block
+        margin-bottom 0
+      &_input
+        min-width: auto
+        margin-bottom 3rem
+        font-size 1.6rem
+    &__button
+      width 100%
