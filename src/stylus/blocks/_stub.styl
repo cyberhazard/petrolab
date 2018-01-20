@@ -1,0 +1,56 @@
+.stub
+  width 141rem
+  padding 5.5rem 0 8.6rem
+  background-color #fff
+  margin 0 auto
+  position relative
+  &:before
+    content: ''
+    position absolute
+    top 50%
+    left 50%
+    width 152rem
+    height 85%
+    border: 0.6rem solid #4872de;
+    transform: translate(-50%,-50%)
+  &__header
+    display flex
+    justify-content space-between
+  &__col
+    flex 0 0 auto
+    &:first-child
+      width 50%
+    &:last-child
+      text-align center
+  &__left
+    display flex
+    position relative
+  &__arrow
+    opacity 0.1
+    position absolute
+    top 0
+    right 0
+    height 100%
+  &__diagram
+    transform: scale(1.5)
+    margin-right 4rem
+  &__heading
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4.4rem;
+    margin-bottom 1.5rem
+  &__proc
+    color: #4872de;
+    font-family: "Arian AMU";
+    font-size: 7.2rem;
+    font-weight: 700;
+  &__text
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom 2rem
+  &__footer
+    text-align right
