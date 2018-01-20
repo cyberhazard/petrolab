@@ -1,0 +1,111 @@
+.projects
+  padding 5rem 0 26rem
+  background-size contain
+  background: url('../images/blog-top-bg.png') top center no-repeat, #FFFFFF  url('../images/contacts-bg.png') bottom center no-repeat;
+  &__item
+    display flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom 4.4rem
+  &__left
+    width 46%
+    padding 3rem 4rem 3rem 3rem
+    background: white
+  &__right
+    width 48%
+    border 10px solid black
+  &__header
+    display flex
+    justify-content: space-between
+    align-items: flex-start
+    &_after
+      margin-bottom 1.4rem
+  &__block
+    margin-bottom 1.4rem
+  &__logo
+    max-width: 20rem
+    width 100%
+    object-fit: contain
+  &__born
+    &_title
+      font-family: "PT Sans";
+      font-size: 2.4rem;
+      color: #d41e44;
+      font-weight: 700;
+      font-style: italic;
+    &_name
+      font-family: "PT Sans";
+      font-size: 2.4rem;
+      font-weight: 400;
+  &__text
+    color: #2e2e2e;
+    font-family: "PT Sans";
+    font-size: 1.8rem;
+    font-weight: 400;
+    & span
+      font-weight: 700;
+  &__subtitle
+    color: #2e2e2e;
+    font-family: "PT Sans";
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: italic;
+    & span
+      font-weight: 400;
+  &__cursive
+    color: #2e2e2e;
+    font-family: "PT Sans";
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 0.6rem;
+    & span
+      color: #4a73de;
+      font-size: 2.4rem;
+  &__diagram
+    display flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom 2.8rem
+    &_left
+      display flex
+      justify-content: space-between
+      align-items: center
+    &_right
+      position: relative
+    &_img
+      width 7.4rem
+      margin-right 1rem
+    &_txt
+      color: #2e2e2e;
+      font-family: "PT Sans";
+      font-size: 2.4rem;
+      font-weight: 400;
+    &_percent
+      color: #4872de;
+      font-family: "Arian AMU";
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 44px;
+      position: relative
+      z-index: 1
+    &_arrow
+      position: absolute
+      left -2rem
+      top -3rem
+      transform: rotate(-10deg);
+      & svg
+        width 14rem
+        height 10rem
+      & path
+        fill black
+  &__footer
+    display flex
+    justify-content: space-between
+    align-items: center
+  &__button span
+    font-size 2rem
+  &__preview
+    width 100%
+    object-fit: cover
+
