@@ -1,0 +1,33 @@
+extends layouts/_main.pug
+
+block vars
+  - const title = 'Проект Petro Lab'
+
+block content
+  include blocks/_header.pug
+  section.projects
+    .g-wrapper
+      .projects__content
+        .section__title Кейс “ЛукойлОверсиз”
+        img.graph(src="../images/graph.svg")
+      .projects-detail__header
+        .projects-detail__header_left
+          img(src="../images/logo-lukoil.png").projects-detail__logo
+          .projects-detail__element
+            .projects-detail__element_title Заказчик:
+            .projects-detail__element_text “ЛукойлОверсиз”
+          .projects-detail__element
+            .projects-detail__element_title Месторождение:
+            .projects-detail__element_text Северные Бузачи
+            .projects-detail__element_text (Всего в месторождении около 2000 скважин)
+          .projects-detail__element
+            .projects-detail__element_title Участок, на котором работаем:
+            .projects-detail__element_text Участок из 278 добывающих и 97 нагнетательных скважин
+        .projects-detail__header_right
+          img(src="../images/project-1.png").projects-detail__preview
+      .projects-detail__middle
+        .projects-detail__middle_head
+          .projects-detail__element_text <span> Прогнозы заказчика по добыче и стратегия проведения ГТМ </span>
+          .projects-detail__element_text До нашего прихода в 2010 году были следующие прогнозы по добыче на 2011-2013г.
+
+
