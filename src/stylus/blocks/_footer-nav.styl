@@ -9,7 +9,7 @@
     &_item
       color: #ffffff;
       font-family: "PT Sans";
-      font-size: 24px;
+      font-size: 2.4rem;
       font-weight: 400;
       padding-left 2.2rem
       margin-right 3rem
@@ -34,3 +34,31 @@
       color: #d41e44;
       font-weight: 700;
       text-transform: uppercase;
+
+@media (max-width:1440px)
+  .footer
+    &__nav
+      &_item
+        margin-right 1.4rem
+        &:before
+          top 8px
+@media (max-width:1050px)
+  .footer
+    &__nav
+      &_item
+        &:before
+          top 6px
+@media (max-width:1024px)
+  .footer
+    &__nav
+      &_item
+        display: none
+    &__copyright
+      font-size 2rem
+@media (max-width:566px)
+  .footer
+    &__copyright
+      font-size 1.6rem
+      & span
+        display block
+
