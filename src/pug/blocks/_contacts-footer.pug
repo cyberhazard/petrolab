@@ -4,13 +4,13 @@
       .contacts-footer__form_title Проконсультируйтесь со специалистом
       .contacts-footer__form_header
         .contacts-footer__form_item
-          input.contacts-footer__form_input(placeholder="Имя...")
+          input.contacts-footer__form_input(placeholder="Имя..." type="text" name="name" )
         .contacts-footer__form_item
-          input.contacts-footer__form_input(placeholder="Телефон...")
+          input.contacts-footer__form_input(placeholder="Телефон..." type="tel" name="tel")
       .contacts-footer__form_item.contacts-footer__form_item_last
-          input.contacts-footer__form_input(placeholder="Ваше сообщение...")
+          input.contacts-footer__form_input(placeholder="Ваше сообщение..." type="text" name="text")
       .contacts-footer__form_bottom
-        button.button: span Отправить
+        button.button(type="submit"): span Отправить
   include ./_footer-nav.pug
 
 
