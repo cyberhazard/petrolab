@@ -42,6 +42,7 @@
     position absolute
     top 2rem
     right 2.6rem
+    height 5rem
   &__results
     display flex
     align-items center
@@ -77,3 +78,62 @@
     font-weight: 400;
     &_bold
       font-weight: 700
+
+@media (max-width: 1000px)
+  .results
+    padding-top 18rem
+    &__heading
+      font-size: 3.6rem;
+    &__sub-heading
+      font-size: 2.4rem;
+    &__title, &__text
+      font-size: 2.4rem;
+    &__block
+      width calc(100% / 2 - .5rem)
+    &__logo
+      height: auto
+      width 13rem
+      right 1rem
+    &__upping
+      font-size: 1.8rem;
+      margin 0 0.6rem
+    &__proc
+      font-size: 3.6rem;
+    &__description
+      font-size: 1.8rem;
+      text-align left
+    &__footer
+      display block
+      text-align right
+
+@media (max-width: 667px)
+  .results
+    padding-top 26rem
+    &__heading
+      font-size: 3rem;
+    &__zzz
+      height 2.6rem
+      margin 1.4rem 0 2.6rem
+    &__sub-heading
+      font-size: 1.6rem;
+      margin-bottom 2rem
+    &__results
+      margin 1rem 0
+    &__blocks
+      display block
+    &__block
+      width 100%
+      margin-bottom 2rem
+    &__title, &__text
+      font-size: 1.8rem;
+    &__logo
+      width 40%
+    &__upping
+      font-size: 1.8rem;
+    &__graph
+      height 5rem
+      margin-left -1rem
+    &__proc
+      font-size: 2.3rem
+    &__description
+      font-size: 1.6rem;
