@@ -10,3 +10,17 @@
  *                ░  ░           ░         ░ ░      ░  ░     ░  ░ ░
  *                                                                     ░
  */
+
+new Swiper('.reviews__slider', {
+  slidesPerView: 2,
+  spaceBetween: 50,
+  initialSlide: 1,
+  breakpoints: {
+    1000: {
+      spaceBetween: 10
+    },
+    667: {
+      slidesPerView: 1
+    }
+  }
+})

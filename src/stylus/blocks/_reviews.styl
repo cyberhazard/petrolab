@@ -4,14 +4,18 @@
     font-family: "Arian AMU";
     font-size: 5.4rem;
     font-weight: 700;
+  &__slider
+    position relative
+    z-index 1
   &__zzz
     height 3.1rem
-    margin 3rem 0 5rem
+    margin 3rem 0 3rem
   &__block
     padding-top 5.5rem
   &__wrapper
     position relative
-    padding 0 2.2rem 3rem
+    padding 1.6rem 2.2rem 3rem
+    box-shadow: 0 0 5.9rem rgba(57, 60, 60, 0.18);
   &__fullname
     color: #2e2e2e;
     font-family: "Arian AMU";
@@ -41,7 +45,7 @@
     font-style: italic;
     text-align center
   &__position
-    margin 1.6rem 0 .3rem 0
+    margin-bottom 0.3rem
   &__org
     font-size: 2.6rem
     margin-bottom 1.8em
@@ -50,3 +54,67 @@
     font-family: "PT Sans";
     font-size: 2.4rem;
     font-style: italic;
+    text-align justify
+  & .swiper-slide
+    transition: opacity .3s;
+  & .swiper-slide-prev, & .swiper-slide-next + .swiper-slide
+    opacity 0.3
+
+@media (max-width: 1000px)
+  .reviews
+    &__heading
+      font-size: 3.6rem;
+    &__zzz
+      margin-bottom 0
+    &__fullname
+      font-size: 2.4rem;
+      padding-left 10rem
+    &__wrapper
+      padding-top .8rem
+    &__position
+      font-size: 1.4rem;
+      text-align right
+      margin 0 0 .3rem 0
+    &__org
+      font-size: 2rem
+      text-align right
+      margin-bottom .8rem
+    &__avatar
+      height 10rem
+      width 10rem
+    &__review
+      font-size: 1.8rem;
+    & .swiper-slide
+      padding 0 1rem
+
+@media (max-width: 667px)
+  .reviews
+    &__heading
+      font-size: 3rem
+    &__zzz
+      height 2.1rem
+      margin 0
+      margin-top 1rem
+    &__fullname
+      font-size: 1.8rem;
+      padding-left 10rem
+    &__wrapper
+      padding-top .8rem
+    &__position
+      font-size: 1.4rem;
+      text-align right
+      margin 0 0 .3rem 0
+      padding-left 3rem
+    &__org
+      font-size: 2rem
+      text-align right
+      margin-bottom .8rem
+    &__avatar
+      height 10rem
+      width 10rem
+    &__review
+      font-size: 1.6rem;
+    & .swiper-slide
+      padding 0
+    & .swiper-slide-next, & .swiper-slide-prev
+      opacity 0
