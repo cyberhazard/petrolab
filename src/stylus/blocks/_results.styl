@@ -1,3 +1,79 @@
 .results
-  height 800px
   background #FDFDFD url('./../../images/results-bg.png') center -300px/auto auto no-repeat
+  padding-top 26rem
+  padding-bottom 5rem
+  &__heading
+    color: #000000;
+    font-family: "Arian AMU";
+    font-size: 5.4rem;
+    font-weight: 700;
+  &__zzz
+    height 3.1rem
+    margin 1.2rem 0 3.4rem
+  &__sub-heading
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom 6rem
+  &__blocks
+    display flex
+    justify-content space-between
+  &__block
+    border 8px solid #000
+    border-image: url('./../../images/gradient-border.svg') 1;
+    flex 0 0 auto
+    width calc(100% / 2 - 3rem)
+    padding 1rem 1.3rem
+    position relative
+  &__title
+    font-family: "PT Sans";
+    color: #d41e44;
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-style: italic;
+  &__text
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #2e2e2e;
+    font-family: "PT Sans";
+    margin-bottom 1rem
+  &__logo
+    position absolute
+    top 2rem
+    right 2.6rem
+  &__results
+    display flex
+    align-items center
+    position relative
+    margin-bottom 2rem
+  &__graph
+    height 7.2rem
+  &__upping
+    color: #2e2e2e;
+    font-family: "PT Sans";
+    font-size: 2.4rem;
+    font-weight: 400;
+    width 22rem
+    margin 0 2rem
+  &__proc
+    color: #4872de;
+    font-family: "Arian AMU";
+    font-size: 4.8rem;
+    font-weight: 700;
+  &__arrow
+    position absolute
+    top -1rem
+    right 14%
+    height 120%
+    opacity 0.1
+  &__footer
+    display flex
+    justify-content space-between
+  &__description
+    color: #2e2e2e;
+    font-family: "PT Sans";
+    font-size: 1.8rem;
+    font-weight: 400;
+    &_bold
+      font-weight: 700
