@@ -71,6 +71,8 @@
   &__left, &__right
     transform: translateY(3px)
     cursor pointer
+    &.swiper-button-disabled
+      opacity 0.3
 
 @media (max-width: 1000px)
   .reviews
@@ -136,7 +138,5 @@
       padding 0.8rem 1.8rem
     &__left, &__right
       height 3rem
-      &.swiper-button-disabled
-        opacity 0.3
     &__left
       margin-right 5rem
