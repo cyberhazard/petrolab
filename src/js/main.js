@@ -22,5 +22,9 @@ new Swiper('.reviews__slider', {
     667: {
       slidesPerView: 1
     }
+  },
+  navigation: {
+    nextEl: '.reviews__right',
+    prevEl: '.reviews__left'
   }
 })
