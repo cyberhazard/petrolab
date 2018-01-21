@@ -28,3 +28,13 @@ new Swiper('.reviews__slider', {
     prevEl: '.reviews__left'
   }
 })
+
+new Swiper('.i-blog__slider', {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  initialSlide: 1,
+  navigation: {
+    nextEl: '.i-blog__right',
+    prevEl: '.i-blog__left'
+  }
+})

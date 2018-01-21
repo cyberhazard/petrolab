@@ -1,0 +1,122 @@
+.i-blog
+  padding-top 5.4rem
+  &__heading
+    color: #2e2e2e;
+    font-family: "Arian AMU";
+    font-size: 5.4rem;
+    font-weight: 700;
+  &__zzz
+    height 3.1rem
+    margin 1rem 0 6rem
+  &__slider
+    margin-bottom 5rem
+  &__slide
+    padding-top 3.8em
+    padding-left 12rem
+    position relative
+  &__description
+    background-color #fff
+    padding-left calc(50% + 2rem)
+    padding-top 3rem
+    padding-right 3rem
+    padding-bottom 6rem
+    box-shadow: 0 0 5.9rem rgba(57, 60, 60, 0.18);
+  &__image
+    position absolute
+    top 0
+    left 0
+    width 50%
+    border 12px solid #000
+    border-image: url('/images/gradient-border.svg') 1
+  &__date
+    color: #d1cece;
+    font-family: "PT Sans";
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom 1rem
+  &__title
+    color: #d41e44;
+    font-family: "Arian AMU";
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  &__sub-title
+    color: #2e2e2e;
+    font-family: "Arian AMU";
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height 3rem
+    margin-top 2rem
+    margin-bottom 2rem
+  &__text
+    color: #2e2e2e;
+    font-family: "PT Sans";
+    font-size: 2rem;
+    font-weight: 400;
+  & .swiper-slide-next, .swiper-slide-prev
+    opacity 0.2
+  & .swiper-slide
+    transition: opacity .3s
+    will-change: opacity
+  &__footer
+    display flex
+    justify-content space-between
+    align-items center
+    & button img
+      transform: translate(1rem, 30%)
+      height 3.8rem
+  &__arrows
+    padding 1.4rem 2rem
+    background-image linear-gradient(to bottom, #CE353C, #5A6CC8)
+  &__left
+    margin-right 5rem
+  &__left, &__right
+    cursor pointer
+    &.swiper-button-disabled
+      opacity 0.3
+
+@media (max-width: 1000px)
+  .i-blog
+    padding-top 3.8rem
+    &__heading
+      font-size: 3.6rem;
+    &__slide
+      padding-left 8.7rem
+    &__slider
+      margin-bottom 4rem
+    &__date
+      font-size: 1.8rem;
+    &__title
+      font-size: 1.8rem;
+    &__sub-title
+      font-size: 2.4rem;
+      margin-top .5rem
+      margin-bottom .5rem
+    &__image
+      width 46%
+    &__text
+      font-size: 1.8rem;
+    &__description
+      padding-left calc(38% + 2rem)
+
+@media (max-width: 667px)
+  .i-blog
+    &__heading
+      font-size: 3rem;
+    &__zzz
+      height 2.6rem
+      margin-top 2rem
+      margin-bottom 2rem
+    &__image
+      position static
+      width 100%
+    &__slide
+      padding 0
+    &__description
+      padding 2.5rem
+    & .swiper-slide-next, & .swiper-slide-prev
+      opacity 0
+    &__arrows
+      display none
+    &__footer
+      justify-content center
