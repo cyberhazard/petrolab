@@ -1,0 +1,262 @@
+.projects-detail
+  &__logo
+    max-width 24rem
+    width 100%
+    object-fit: contain
+    margin-bottom 3.4rem
+  &__header
+    display flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom 2.4rem
+    &_left
+      width 48%
+    &_right
+      width 48%
+      border 8px solid black
+      border-image: url(../../images/gradient-border.svg) 1;
+  &__element
+    margin-bottom 2.8rem
+    &_title
+      font-size: 2.4rem;
+      color: #d41e44;
+      font-family: "Arian AMU";
+      font-weight: 700;
+    &_text
+      color: #2e2e2e;
+      font-family: "PT Sans";
+      font-size: 2.4rem;
+      font-weight 400
+      &_marg
+        margin-bottom 2.4rem
+      &_lh
+        line-height 4rem
+      & span
+        font-family: "Arian AMU";
+        font-weight: 700;
+
+  &__preview
+    width 100%
+    object-fit: cover
+    max-height: 40rem
+  &__middle
+    margin-bottom 5rem
+    &_head
+      margin-bottom 1rem
+  &__table
+    width 100%
+    border-collapse: collapse
+    margin-bottom 1rem
+    &_tr
+      &:first-child
+        background: linear-gradient(45deg, #D51935, #4563D0);
+      &_white
+        &:first-child
+          background: transparent
+      &_odd
+        &:nth-child(even)
+          background: #EFF2FC
+      &_gradient
+        background: linear-gradient(45deg, #D51935, #4563D0);
+    &_th
+      padding 1.6rem
+      color white
+      font-family: "PT Sans";
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-align: left
+      border 1px solid #c3c3c3
+      &_black
+        color black
+    &_td
+      padding 1.6rem
+      color: #000000;
+      font-family: "PT Sans";
+      font-size: 2.4rem;
+      font-weight: 400;
+      text-align: left
+      border 1px solid #c3c3c3
+
+
+  &__algoritms
+    &_title
+      color: #d41e44;
+      font-family: "Arian AMU";
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 4.4rem;
+      margin-bottom 2rem
+    &_content
+      display flex
+      justify-content: space-between
+      align-items: flex-start
+    &_left
+      width 64%
+    &_right
+      width 32%
+      border 8px solid black
+      border-image: url(../../images/gradient-border.svg) 1;
+      padding 4rem 2rem
+    &_el
+      position: relative
+      color: #2e2e2e;
+      font-family: "PT Sans";
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 3.6rem;
+      padding-left 3.4rem
+      margin-bottom 4rem
+      &:last-child
+        margin-bottom 0
+      &:before
+        content: ''
+        left 0
+        top 16px
+        width: 22px
+        height: 4px
+        background-color: #d41e44;
+        position: absolute
+
+  &__work
+    &_problems
+      padding 2rem 3rem
+      position: relative
+      margin-bottom 2.4rem
+      &:before
+        content ''
+        left 0
+        top 0
+        width 1rem
+        height: 100%
+        background: linear-gradient(45deg, #D51935, #4563D0);
+        position: absolute
+    &_elements
+      display flex
+      justify-content: flex-start
+      align-items: flex-start
+    &_element
+      color: #2e2e2e;
+      font-family: "PT Sans";
+      font-size: 2.4rem;
+      font-weight: 400;
+      position relative
+      padding-left 3rem
+      margin-right 5rem
+      &:last-child
+        margin-right 0
+      &:before
+        content: ''
+        top 8px
+        left 0
+        width 14px
+        height: 14px
+        border-radius 50%
+        background-color: #d41e44;
+        position: absolute
+  &__forecast
+    margin-bottom 8rem
+  &__results
+    margin-bottom 5rem
+    &_content
+      display flex
+      justify-content: space-between
+      align-items: center
+    &_img
+      width 24%
+    &_diagram
+      max-width 20rem
+      width 100%
+      object-fit: cover
+    &_arrow
+      position: relative
+      width 36%
+    &_text
+      font-family: "PT Sans";
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 3.6rem;
+      margin-bottom 0.8rem
+      color #d41e44
+      z-index: 1
+      position: relative
+    &_percents
+      color: #4872de;
+      font-family: "Arian AMU";
+      font-size: 7.2rem;
+      font-weight: 700;
+      z-index: 1
+      position: relative
+    &_about
+      width 54%
+    &_svg
+      position: absolute
+      top -70px
+      left 0
+      width 100%
+      max-width 29rem
+      z-index: 0
+      & svg
+        width 100%
+      & path
+        fill black
+
+  &__notification
+    position relative
+    padding 4rem
+    background: #EFF2FC
+    &:after
+      content ''
+      right 1rem
+      top 1rem
+      max-width 15.6rem
+      max-height: 13rem
+      height: 100%
+      width 100%
+      background: url('../images/left-quote.png') center center no-repeat
+      background-size cover
+      position absolute
+      z-index
+
+    &_title
+      position: relative
+      z-index: 1
+      color: #2e2e2e;
+      font-family: "PT Sans";
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom 1.4rem
+    &_text
+      color: #2e2e2e;
+      font-family: "PT Sans";
+      font-size: 2.4rem;
+      font-weight: 400;
+      line-height: 3.4rem;
+      margin-bottom 2rem
+    &_author
+      text-align: right
+    &_name
+      display inline-block
+      color: #2e2e2e;
+      font-family: "PT Sans";
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom 1rem
+      position: relative
+      padding-left 5rem
+      &:before
+        content ''
+        width 4rem
+        height: 4px
+        background: black
+        position: absolute
+        left 0
+        top 12px
+    &_post
+      opacity: 0.8;
+      color: #2e2e2e;
+      font-family: "PT Sans";
+      font-size: 1.8rem;
+      font-weight: 400;
+
+
+
