@@ -11,10 +11,12 @@
     margin-bottom 2.4rem
     &_left
       width 48%
+      order 1
     &_right
       width 48%
       border 8px solid black
       border-image: url(../../images/gradient-border.svg) 1;
+      order 2
   &__element
     margin-bottom 2.8rem
     &_title
@@ -25,7 +27,7 @@
     &_text
       color: #2e2e2e;
       font-family: "PT Sans";
-      font-size: 2.4rem;
+      font-size: 2rem;
       font-weight 400
       &_marg
         margin-bottom 2.4rem
@@ -254,7 +256,7 @@
         background: black
         position: absolute
         left 0
-        top 12px
+        top 14px
     &_post
       opacity: 0.8;
       color: #2e2e2e;
@@ -262,5 +264,170 @@
       font-size: 1.8rem;
       font-weight: 400;
 
+
+@media (max-width:1440px)
+  .projects-detail
+    &__algoritms
+      &_el
+        &:before
+          top 12px
+    &__work
+      &_element
+        &:before
+          top 6px
+    &__notification
+      &_name
+        &:before
+          top 12px
+@media (max-width:1280px)
+  .projects-detail
+    &__algoritms
+      &_el
+        &:before
+          top 10px
+          width 16px
+    &__work
+      &_element
+        &:before
+          top 4px
+    &__results
+      &_svg
+        top -94px
+    &__notification
+      &_name
+        &:before
+          top 10px
+@media (max-width:1000px)
+  .projects-detail
+    &__element
+      &_text
+        font-size 1.8rem
+    &__logo
+      margin-bottom 1.8rem
+    &__algoritms
+      &_title
+        font-size 2.4rem
+      &_left
+        width 56%
+      &_right
+        width 42%
+        padding 4.6rem 2rem
+      &_el
+        font-size 1.8rem
+        &:before
+          top 16px
+    &__table
+      &_th
+        font-size 1.8rem
+      &_td
+        font-size 1.8rem
+    &__work
+      &_element
+        font-size: 1.8rem
+    &__results
+      &_text
+        font-size 2.4rem
+      &_percents
+        font-size 4.8rem
+    &__notification
+      padding 3rem
+      &_title
+        font-size 2.4rem
+      &_text
+        font-size 1.8rem
+      &_name
+        &:before
+          top 12px
+      &:after
+        top 3rem
+        right 2rem
+        max-width: 10rem
+        background-size: contain
+
+@media (max-width:667px)
+  .projects-detail
+    &__header
+      display block
+      &_left
+        width 100%
+      &_right
+        width 100%
+        margin-bottom 1.4rem
+    &__logo
+      max-width: 16rem
+    &__element
+      &_title
+        font-size 1.6rem
+      &_text
+        font-size 1.6rem
+        &_lh
+          line-height 2rem
+    &__table
+      &_th
+        text-align: center
+        padding 0.4rem
+        font-size 1.2rem
+      &_td
+        text-align: center
+        padding 0.4rem
+        font-size 1.2rem
+    &__algoritms
+      margin-bottom 3.4rem
+      &_content
+        display block
+      &_left
+        width 100%
+      &_right
+        padding 2rem 0.4rem
+        width 100%
+      &_title
+        font-size 1.6rem
+        line-height 2.4rem
+      &_el
+        font-size 1.6rem
+        margin-bottom 2rem
+        line-height 2rem
+        padding-left 2.4rem
+        &:before
+          top 8px
+    &__work
+      &_elements
+        display block
+      &_element
+        font-size 1.6rem
+        margin-bottom 1.4rem
+        &:last-child
+          margin-bottom 0
+    &__results
+      &_content
+        flex-wrap wrap
+      &_img
+        width 40%
+      &_about
+        width 100%
+      &_arrow
+        width 50%
+      &_text
+        font-size 1.6rem
+        line-height 2rem
+      &_percents
+        font-size 4.8rem
+    &__notification
+      padding 2rem
+      &_title
+        font-size 1.6em
+      &_text
+        font-size 1.6rem
+        line-height 2.4rem
+      &_name
+        font-size 1.6rem
+        margin-bottom 0.6rem
+        &:before
+          height: 2px
+          top 10px
+      &_post
+        font-size 1.4rem
+      &:after
+        top 0rem
 
 
