@@ -206,17 +206,17 @@
     background: #EFF2FC
     &:after
       content ''
-      right 1rem
-      top 1rem
+      top 3rem
+      right 4rem
       max-width 15.6rem
       max-height: 13rem
       height: 100%
       width 100%
       background: url('../images/left-quote.png') center center no-repeat
       background-size cover
+      opacity 0.4
       position absolute
-      z-index
-
+      z-index 0
     &_title
       position: relative
       z-index: 1
@@ -226,6 +226,8 @@
       font-weight: 700;
       margin-bottom 1.4rem
     &_text
+      position: relative
+      z-index: 1
       color: #2e2e2e;
       font-family: "PT Sans";
       font-size: 2.4rem;
@@ -233,6 +235,8 @@
       line-height: 3.4rem;
       margin-bottom 2rem
     &_author
+      position: relative
+      z-index: 1
       text-align: right
     &_name
       display inline-block
