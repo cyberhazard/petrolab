@@ -2,3 +2,117 @@
   padding 5rem 0 37rem
   background-size contain
   background: url('../images/blog-top-bg.png') top center no-repeat, #FFFFFF  url('../images/contacts-bg.png') bottom center no-repeat;
+  &__content
+    display flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap wrap
+    padding-top 3.4rem
+  &__item
+    width 48%
+    background: white
+    margin-bottom 3.8rem
+    &_right
+      padding 2rem 3.4rem 3.6rem
+    &_footer
+      text-align: right
+  &__image
+    width 100%
+    max-height: 38rem
+    object-fit: cover
+  &__date
+    color: #d1cece;
+    font-family: "PT Sans";
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom 1.4rem
+  &__title
+    color: #d41e44;
+    font-family: "Arian AMU";
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom 1rem
+  &__subtitle
+    color: #2e2e2e;
+    font-family: "Arian AMU";
+    font-size: 2.4rem
+    font-weight: 700;
+    margin-bottom 2rem
+  &__descript
+    color: #2e2e2e;
+    font-family: "PT Sans";
+    font-size: 2rem
+    font-weight: 400;
+    margin-bottom 2rem
+  &__button
+    display inline-block
+
+.blog__item:first-child
+  position relative
+  display flex
+  justify-content: flex-end
+  align-items: flex-start
+  width 100%
+  padding 3.4rem 4.4rem 3.4rem 0
+.blog__item:first-child .blog__item_left
+  position: absolute
+  left 0
+  top -3.6rem
+  width 56%
+  border 8px solid black
+  border-image: url(../../images/gradient-border.svg) 1;
+
+.blog__item:first-child .blog__image
+  max-height: 46rem
+
+.blog__item:first-child .blog__item_right
+  width 40%
+  padding 0
+
+
+@media (max-width:1000px)
+  .blog
+    &__item
+      &_right
+        padding 2rem 2rem 3rem
+      &:first-child
+        padding 2rem 2rem 3rem
+    &__date
+      font-size 1.8rem
+    &__title
+      font-size 1.8rem
+    &__descript
+      font-size 1.8rem
+    &__subtitle
+      margin-bottom 1rem
+
+@media (max-width:667px)
+  .blog
+    padding 5rem 0 10rem
+    &__item
+      width 100%
+      &_right
+        padding 1rem 2rem 3rem
+      &:first-child
+        display block
+        padding 0
+    &__image
+      max-height: 22rem
+    &__date
+      font-size 1.6rem
+    &__title
+      font-size 1.6rem
+    &__descript
+      font-size 1.6rem
+    &__subtitle
+      font-size 1.8rem
+  .blog__item:first-child .blog__item_left
+    width 100%
+    position: relative
+    top 0
+  .blog__item:first-child .blog__item_right
+    width 100%
+    padding 1rem 2rem 3rem
+  .blog__item:first-child .blog__image
+    max-height: 22rem
