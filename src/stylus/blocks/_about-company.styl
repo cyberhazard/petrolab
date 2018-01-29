@@ -44,6 +44,8 @@
       font-size: 2.4rem;
       font-weight: 700;
       margin-bottom 0.4rem
+      & span
+        opacity 0
     &_text
       color: #2e2e2e;
       font-family: "PT Sans";
@@ -106,6 +108,7 @@
       font-size 1.8rem
 @media (max-width:667px)
   .company
+    padding 5rem 0 12rem
     &__presentation
       &_image
         max-width 4.4rem
@@ -115,6 +118,14 @@
       margin-bottom 8rem
       &_subtitle
         font-size 1.6rem
+        display flex
+        justify-content: space-between
+        & span
+          position: relative
+          opacity 1
+          transform: rotate(90deg)
+          font-size 2.4rem
+          line-height: 1.8rem
       &_text
         font-size 1.6rem
     &__name
@@ -126,8 +137,12 @@
     font-family: "PT Sans";
     font-size: 1.8rem;
     font-weight: 700;
-    padding 1.4rem
+    padding 1.4rem 2rem 1.4rem 1.4rem
     background-color: #d41e44;
   .company__item_mobile
     overflow: hidden
     transition height .5s
+
+  .active-tab .company__item_subtitle span
+    transform: rotate(270deg)
+    right -6px
