@@ -1,0 +1,50 @@
+extends layouts/_main.pug
+
+block vars
+  - const title = 'Страница о компании Petro Lab'
+
+block content
+  include blocks/_header.pug
+  .company
+    .g-wrapper
+      .company__content
+        h3.heading О компании
+        img.zzz(src="/images/zzz.svg")
+        p.about__text Мы помогаем максимально #[span.about__text_bold раскрыть потенциал добычи нефти] на ваших месторождениях! Применяемые нами #[span.about__text_bold методы Data Mining и Big Data] – основы управления интеллектуальным месторождением
+        p.about__text #[span.about__text_bold Данный подход позволяет] обобщить уже накопленный Ваш ценнейший опыт разработки и найти новые скрытые правила успешности, позволяющий коренным образом #[span.about__text_bold повысить результативность] мероприятий на десятки процентов!
+        p.about__text.about__text_bold.about__text_line Наши методы позволяют увеличить уровень добычи от 20 до 150%!
+        p.about__text.about__text_last #[span.about__text_bold Наша команда] состоит из опытных специалистов нефтегазовой отрасли, многие из которых имеют докторские степени и #[span.about__text_bold опыт более 30 лет]
+
+        a(href="#").company__presentation
+          img(src="../images/presentation-icon.png").company__presentation_image
+          .company__presentation_title Смотреть презентацию компании
+
+        .company__gallery gallery
+
+
+        .company__specialists
+          h3.heading Специалисты PetroLab
+          img.zzz(src="/images/zzz.svg")
+
+          .company__item
+            .company__item_header
+              .company__item_photo
+                img(src="../images/spec.png").company__item_spec
+              .company__item_inform
+                .company__proffession
+                  .company__name Соляной Павел
+                  .company__post Ведущий специалист в области BigData
+                .company__item_skills
+                  .company__item_skill
+                    .company__item_subtitle Образование:
+                    .company__item_text Окончил МФТИ в <span>2007</span> году и аспирантуру кафедры в 2009 году. В 2011 г. защитил кандидатскую, в 2016 г. - докторскую диссертацию “Оптимизация систем разработки залежей нефти с неоднородным коллектором”. Является <span>автором 12 и соавтором 57 научных статей</span> на тему оптимизации ГТМ.
+                  .company__item_skill
+                    .company__item_subtitle Достижения:
+                    .company__item_text П.Соляным созданы <span>уникальные алгоритмы машинного обучения</span> на основе прогнозирования временных рядов динамики с использованием полиномиального тренда и аддитивно-мультипликативной колебательной компоненты на основе моделей авторегрессии скользящего среднего. П.Соляной <span>является признанным лидером</span> в области оптимизации ГТМ с использованием методов Машинного обучения и BigData.
+            .company__item_footer
+              .company__item_skill
+                .company__item_subtitle Научные работы:
+                .company__item_text.company__item_text-marg <span>1.</span> Уникальные алгоритмы машинного обучения на основе прогнозирования временных рядов динамики с использованием полиномиального тренда и аддитивно-мультипликативной колебательной компоненты на основе моделей авторегрессии скользящего среднего.
+                .company__item_text.company__item_text-marg <span>2.</span> Алгоритмы машинного обучения на основе прогнозирования временных рядов динамики.
+                .company__item_text.company__item_text-marg <span>3.</span> Динамика с использованием полиномиального тренда и аддитивно-мультипликативной колебательной компоненты на основе моделей авторегрессии скользящего среднего.
+  include blocks/_footer.pug
