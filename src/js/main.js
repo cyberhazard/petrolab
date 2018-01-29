@@ -41,13 +41,14 @@ new Swiper('.i-blog__slider', {
 
 // about company description buttons
 const scrollDescript = function(){
+  if(!document.querySelector('.company__item_mobile .company__item_subtitle')) return null
   const wrapper = document.querySelectorAll('.company__item_mobile')
   const header = document.querySelector('.company__item_mobile .company__item_subtitle');
   const height = header.clientHeight;
   wrapper.forEach(e=>{
-    if (innerWidth < 667) e.style.height = height + 'px';
+    if (innerWidth < 668) e.style.height = height + 'px';
     e.onclick = () => {
-      if (innerWidth > 667) return null
+      if (innerWidth > 668) return null
       if (e.classList.contains('active-tab')) e.style.height = height + 'px';
       else  e.style.height = e.scrollHeight + 'px';
       e.classList.toggle('active-tab')
