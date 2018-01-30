@@ -1,0 +1,63 @@
+.t-analytic
+  &__heading
+    color: #d41e44;
+    font-family: "Arian AMU";
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom 1rem
+  &__text
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom 4rem
+    &_bold
+      font-weight: 700;
+  &__sub-heading
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom 3rem
+  &__list
+    list-style-type none
+    display flex
+    flex-wrap: wrap
+    align-items center
+    justify-content space-between
+  &__item
+    width calc(100% / 3 - 2rem)
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 2.4rem;
+    line-height 2.4rem
+    font-weight: 400;
+    position relative
+    padding-left 3rem
+    margin-bottom 2rem
+    &:before
+      content: ''
+      position absolute
+      top 50%
+      left 0
+      transform: translateY(-50%)
+      width 1.2rem
+      height 1.2rem
+      border-radius 50%
+      background-color: #d41e44;
+
+@media (max-width: 1000px)
+  .t-analytic
+    &__item
+      width: calc(100% / 2 - 2rem)
+
+@media (max-width: 667px)
+  .t-analytic
+    &__heading, &__text, &__sub-heading, &__item
+      font-size: 1.6rem;
+    &__text, &__sub-heading
+      margin-bottom 2rem
+    &__item
+      width 100%
+      margin-bottom .8rem
+
