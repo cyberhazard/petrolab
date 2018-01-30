@@ -38,6 +38,28 @@ new Swiper('.i-blog__slider', {
     prevEl: '.i-blog__left'
   }
 })
+/**
+ * POST request callback forms
+ */
+var sendMail = function sendMail(selector) {
+  return fetch('/mail.php', {
+    method: 'POST',
+    body: new FormData(document.querySelector(selector))
+  }).catch(function (error) {
+    alertify.error("Ошибка. Повторите отправку позже");
+  });
+};
+/**
+ * Отправка заявки
+ */
+var callBackForm = function(){
+  const submit = document.querySelector('.footer-feedback__button')
+  document.querySelector(".callback").onsubmit = function(e){
+    e.preventDefault();
+    sendMail('.callback').then(_ => (alertify.success("Ваша заявка отправленна"), document.querySelector(".callback").reset()))
+  }
+}
+callBackForm();
 
 // about company description buttons
 const scrollDescript = function(){
