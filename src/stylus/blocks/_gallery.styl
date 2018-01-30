@@ -1,0 +1,91 @@
+.gallery
+  max-width: 99.2rem
+  width 100%
+  position: relative
+  display flex
+  justify-content: space-between
+  align-items: flex-start
+  padding 4rem 4rem 7rem
+  background: white
+  box-shadow: 0 0.6rem 1.4rem rgba(0,0,0,.2);
+  &__previews
+    display flex
+    justify-content: flex-start
+    align-items: center
+    flex-wrap: wrap
+    width 50%
+  &__prev
+    cursor pointer
+    width 19rem
+    height: 16rem
+    object-fit: cover
+    border 6px solid transparent
+    margin-bottom 0.8rem
+    margin-right 0.8rem
+    &_active
+      border-image: url(../../images/gradient-border.svg) 1;
+  &__main
+    position: absolute
+    top -5.6rem
+    right -18rem
+  &__full
+    width: 70rem
+    height: 45rem
+    object-fit: cover
+    border 6px solid transparent
+    border-image: url(../../images/gradient-border.svg) 1;
+
+@media (max-width:1000px)
+  .gallery
+    max-width: 70.2rem
+    padding 2rem 2rem 3rem
+    &__previews
+      width 60%
+    &__prev
+      width 15.2rem
+      height: 12.2rem
+    &__full
+      width: 41.6rem
+      height: 30rem
+    &__main
+      right -7rem
+@media (max-width:810px)
+  .gallery
+    &__full
+      width: 36.6rem;
+      height: 28rem;
+    &__main
+      right -2rem
+@media (max-width:734px)
+  .gallery
+    &__full
+      width: 32.6rem;
+      height: 24rem;
+    &__main
+      right 0rem
+
+@media (max-width:667px)
+  .gallery
+    max-width: none
+    padding 0 1rem 1rem
+    flex-wrap: wrap
+    &__previews
+      width 100%
+      justify-content: space-between
+      order 1
+      margin-top -4.6rem
+    &__main
+      width 100%
+      position: relative
+      top -5.6rem
+      right 0
+      order 0
+    &__full
+      max-width none
+      max-height: 22.2rem
+      width 100%
+    &__prev
+      width 49%
+      height: 13.4rem
+      margin-right 0
+
