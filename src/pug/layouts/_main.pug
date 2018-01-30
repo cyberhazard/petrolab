@@ -10,9 +10,14 @@ html(lang="ru")
     script(src="/vendor/swiper.min.js")
     link(rel="stylesheet", href="/vendor/swiper.min.css")
     script(src="/vendor/animated-scroll-to.js")
+    link(rel="stylesheet", href="/vendor/alertify.core.css")
+    link(rel="stylesheet", href="/vendor/alertify.default.css")
   body
     #wrapper
       block content
       img.hamburger(src="/images/menu.svg")
       include ../blocks/_mobile-menu.pug
+    script(src="/vendor/alertify.min.js")
+    script(src="/vendor/inputmask.dependencyLib.min.js")
+    script(src="/vendor/inputmask.min.js")
     script(src="/js/main.js")
