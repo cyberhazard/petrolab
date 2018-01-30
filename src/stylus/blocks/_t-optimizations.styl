@@ -1,0 +1,32 @@
+.t-optimizations
+  padding-top 3rem
+  padding-bottom 50rem
+  background: url('/images/contacts-bg.png') center bottom/auto no-repeat
+  &__heading
+    color: #d41e44;
+    font-family: "Arian AMU";
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom 5rem
+  & svg
+    width 100%
+  &__text
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 4rem;
+    position relative
+    padding .5rem 0 0 3rem
+    &:before
+      content: ''
+      position absolute
+      top 0
+      left 0
+      width 8px
+      height 100%
+      background-image linear-gradient(to bottom, #695DB0, #A83964)
+
+@media (max-width: 667px)
+  .t-optimizations
+    display none
