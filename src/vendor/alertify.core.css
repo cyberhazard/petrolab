@@ -57,7 +57,8 @@
 	z-index: 5000;
 	bottom: 10px;
 	right: 10px;
-	width: 300px;
+  width: 300px;
+  font-size:1.8rem;
 }
 .alertify-logs-hidden {
 	display: none;
@@ -128,7 +129,8 @@
 		width: 90%;
 		-webkit-box-sizing: border-box;
 		   -moz-box-sizing: border-box;
-		        box-sizing: border-box;
+            box-sizing: border-box;
+    font-size:1.6rem;
 	}
 	.alertify {
 		left: 5%;
