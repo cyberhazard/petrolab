@@ -119,3 +119,22 @@ scrollDescript();
 
 // input masks
 [...document.querySelectorAll('input[type="tel"]')].forEach(input => new Inputmask('+7 (999) 999-99-99').mask(input))
+
+
+// gallery script for about company page
+
+const galleryPhotos = () => {
+  if(!document.querySelector('.gallery__full')) return null
+  const previews = document.querySelectorAll('.gallery__prev');
+  const main = document.querySelector('.gallery__full')
+  previews.forEach(photo => {
+    photo.onclick = function(e){
+      previews.forEach(el=>{
+        el.classList.remove('gallery__prev_active');
+      })
+      e.currentTarget.classList.toggle('gallery__prev_active');
+      main.setAttribute('src', e.currentTarget.getAttribute('data-full'));
+    }
+  })
+}
+galleryPhotos();
