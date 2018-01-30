@@ -1,12 +1,12 @@
 .g-wrapper
-  form.footer-feedback
+  form.footer-feedback.callback
     .contacts-footer__form_title.footer-feedback__form_title Проконсультируйтесь со специалистом
     .footer-feedback__form_header
       .footer-feedback__form_item
-        input.footer-feedback__form_input(placeholder="Имя..." type="text" name="name")
+        input.footer-feedback__form_input(placeholder="Имя..." type="text" name="name" required)
       .footer-feedback__form_item
-        input.footer-feedback__form_input(placeholder="Телефон..." type="tel" name="tel")
+        input.footer-feedback__form_input(placeholder="Телефон..." type="tel" name="tel" required)
     .footer-feedback__form_item.footer-feedback__form_item_last
-        input.footer-feedback__form_input(placeholder="Ваше сообщение..." type="text" name="text")
+        input.footer-feedback__form_input(placeholder="Ваше сообщение..." type="text" name="text" )
     .footer-feedback__form_bottom
       button.button.footer-feedback__button(type="submit"): span Отправить

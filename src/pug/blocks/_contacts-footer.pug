@@ -1,12 +1,12 @@
 .contacts-footer
-  form.contacts-footer__form
+  form.contacts-footer__form.callback
     .g-wrapper
       .contacts-footer__form_title Проконсультируйтесь со специалистом
       .contacts-footer__form_header
         .contacts-footer__form_item
-          input.contacts-footer__form_input(placeholder="Имя..." type="text" name="name" )
+          input.contacts-footer__form_input(placeholder="Имя..." type="text" name="name"  required)
         .contacts-footer__form_item
-          input.contacts-footer__form_input(placeholder="Телефон..." type="tel" name="tel")
+          input.contacts-footer__form_input(placeholder="Телефон..." type="tel" name="tel" required)
       .contacts-footer__form_item.contacts-footer__form_item_last
           input.contacts-footer__form_input(placeholder="Ваше сообщение..." type="text" name="text")
       .contacts-footer__form_bottom
