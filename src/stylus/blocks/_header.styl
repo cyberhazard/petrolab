@@ -48,6 +48,20 @@
   &__zline
     height 3.2rem
     margin 3rem 0
+  &_mini
+    & .g-wrapper
+      display none
+    & video
+      display none
+    & .header__blackout
+      background white
+    & .menu__link, & .header__phone, & .header__email
+      color #2E2E2E
+    & .menu:before
+      background-color #2E2E2E
+    & .menu__link:hover, & .menu__link.active
+      background-color #C23548
+      color: white
 
 .menu
   display flex
@@ -70,4 +84,5 @@
     &:hover, &.active
       background-color white
       color: black
+      z-index 1
 
