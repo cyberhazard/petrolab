@@ -93,3 +93,7 @@ void function mobileMenu() {
     document.querySelector('#wrapper').style.paddingRight = scroll + '';
   }
 }()
+scrollDescript();
+
+// input masks
+[...document.querySelectorAll('input[type="tel"]')].forEach(input => new Inputmask('+7 (999) 999-99-99').mask(input))
