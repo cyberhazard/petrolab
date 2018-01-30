@@ -56,3 +56,18 @@ const scrollDescript = function(){
   });
 }
 scrollDescript()
+
+/**
+ * Блок "Анализ входных параметров"
+ */
+void function analysisBlock() {
+  const items = [...document.querySelectorAll('.analysis__item')];
+  if (!items) return null;
+  const descriptions = [...document.querySelectorAll('.analysis__description')];
+  items.forEach((item, index) => item.onclick = () => {
+    items.forEach(i => i.classList.remove('active'));
+    descriptions.forEach(d => d.style.display = '');
+    item.classList.add('active');
+    descriptions[index].style.display = 'block';
+  })
+}()
