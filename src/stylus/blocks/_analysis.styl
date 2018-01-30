@@ -26,6 +26,7 @@
     flex-grow: 1 // - !!!
     display flex
     align-items flex-start
+    justify-content space-between
     padding .8rem
     border 4px solid transparent
     margin-bottom 1.6rem
@@ -96,3 +97,34 @@
       font-family: "PT Sans";
       font-size: 1.8rem;
       font-weight: 400;
+
+@media (max-width: 1000px)
+  .analysis
+    &__blocks
+      flex-wrap: wrap;
+    &__block
+      width: calc(100% / 2 - 2rem)
+      &:nth-child(1)
+        order: 1
+      &:nth-child(2)
+        order: 3
+        width 100%
+      &:nth-child(3)
+        order: 2
+    &__description
+      position relative
+      height: auto
+
+@media (max-width: 667px)
+  .analysis
+    &__heading, &__text, &__title, &__description-text
+      font-size: 1.6rem;
+    &__text
+      margin-bottom 1rem
+    &__number
+      font-size: 6rem
+    &__block
+      width 100%
+    &__item
+      padding 0.4rem
+      margin-bottom 1rem
