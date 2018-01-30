@@ -1,0 +1,98 @@
+.analysis
+  padding-top 3rem
+  &__heading
+    color: #d41e44;
+    font-family: "Arian AMU";
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom 1rem
+  &__text
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom 5rem
+    &_bold
+      font-weight: 700;
+  &__blocks
+    display flex
+    justify-content space-between
+  &__block
+    flex 0 0 auto
+    width calc(100% / 3 - 2rem)
+    display flex // - !!!
+    flex-direction: column // - !!!
+  &__item
+    flex-grow: 1 // - !!!
+    display flex
+    align-items flex-start
+    padding .8rem
+    border 4px solid transparent
+    margin-bottom 1.6rem
+    background-color #fff
+    background-origin: border-box
+    cursor pointer
+    border-radius 3px
+    transition: opacity .3s
+    &:hover
+      opacity 0.8
+    &_left
+      background-image linear-gradient(to right, #CB3542, #9B4073)
+    &_right
+      background-image linear-gradient(to right, #AD385F, #824E91)
+    &.active
+      background-image none
+      border-color: #C23548
+      & ^[0]__title, & ^[0]__number
+        color #C23548
+  &__title
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 2.4rem;
+    font-weight: 700;
+  &__number
+    opacity: 0.2;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 7.2rem;
+    line-height 6rem
+    font-weight: 700;
+  &__wrapper
+    position relative
+    width 100%
+    height 100%
+    border 4px solid #C23548
+    margin-bottom 1.6rem
+    border-radius 3px
+  &__description
+    display none
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    z-index 1
+    padding 3rem 2rem 2rem
+    overflow auto
+    &-number
+      position absolute
+      top 1rem
+      left .5rem
+      opacity: 0.2;
+      color: #d41e44;
+      font-family: "PT Sans";
+      font-size: 7.2rem;
+      line-height 6rem
+      font-weight: 700;
+      z-index -1
+    &-title
+      color: #d41e44;
+      font-family: "PT Sans";
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom 1.5rem
+    &-text
+      color: #000000;
+      font-family: "PT Sans";
+      font-size: 1.8rem;
+      font-weight: 400;
