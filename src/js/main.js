@@ -138,3 +138,21 @@ const galleryPhotos = () => {
   })
 }
 galleryPhotos();
+
+/**
+ * Блок "Анализ входных параметров"
+ */
+void function analysisBlock() {
+  const items = [...document.querySelectorAll('.analysis__item')];
+  if (items.length === 0) return null;
+  items[0].classList.add('active');
+  const descriptions = [...document.querySelectorAll('.analysis__description')];
+  descriptions[0].style.display = 'block';
+  items.forEach((item, index) => item.onclick = () => {
+    items.forEach(i => i.classList.remove('active'));
+    descriptions.forEach(d => d.style.display = '');
+    item.classList.add('active');
+    descriptions[index].style.display = 'block';
+    if (window.innerWidth < 667) animateScrollTo(document.querySelector('#analysis-description'), {speed: 1200, minDuration: 1000})
+  })
+}()
