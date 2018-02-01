@@ -91,6 +91,13 @@ html
         right -0.3em
         bottom -0.3em
 
+.hamburger
+  position fixed
+  top 3rem
+  left 2rem
+  z-index 10
+  display none
+
 @media (max-width: 1600px)
   html
     font-size: 9px
@@ -130,6 +137,8 @@ html
           right -0.5rem
   .heading
     font-size: 3.6rem;
+  .hamburger
+    display block
 
 @media (max-width: 667px)
   .g-wrapper
@@ -153,3 +162,7 @@ html
     margin 1.4rem 0 2.6rem
   .heading
     font-size: 3rem;
+  .hamburger
+    left: auto
+    top 2rem
+    right 2rem
