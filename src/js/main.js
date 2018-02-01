@@ -62,7 +62,7 @@ scrollDescript()
  */
 void function analysisBlock() {
   const items = [...document.querySelectorAll('.analysis__item')];
-  if (!items) return null;
+  if (items.length == 0) return null;
   items[0].classList.add('active');
   const descriptions = [...document.querySelectorAll('.analysis__description')];
   descriptions[0].style.display = 'block';
@@ -73,4 +73,23 @@ void function analysisBlock() {
     descriptions[index].style.display = 'block';
     if (window.innerWidth < 667) animateScrollTo(document.querySelector('#analysis-description'), {speed: 1200, minDuration: 1000})
   })
+}()
+
+void function mobileMenu() {
+  const button = document.querySelector('.hamburger');
+  const closeButton = document.querySelector('.m-menu__close');
+  const menu = document.querySelector('.m-menu');
+  const scroll = window.innerWidth - document.documentElement.clientWidth;
+
+  button.onclick = () => {
+    document.body.classList.add('lock');
+    document.querySelector('#wrapper').style.paddingRight = scroll + 'px';
+    menu.classList.add('active');
+  };
+
+  closeButton.onclick = () => {
+    document.body.classList.remove('lock');
+    menu.classList.remove('active');
+    document.querySelector('#wrapper').style.paddingRight = scroll + '';
+  }
 }()
